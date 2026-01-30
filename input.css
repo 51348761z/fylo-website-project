@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-blue: hsl(217, 28%, 15%);
+  --color-dark-blue1: hsl(218, 28%, 13%);
+  --color-dark-blue2: hsl(216, 53%, 9%);
+  --color-dark-blue3: hsl(219, 30%, 18%);
+  --color-accent-cyan: hsl(176, 68%, 64%);
+  --color-accent-blue: hsl(198, 60%, 50%);
+  --color-light-red: hsl(0, 100%, 63%);
+
+  --font-sans: Raleway, sans-serif;
+  --font-opensans: "Open Sans", serif;
+
+  --bg-logo-light: url("../images/logo-light-mode.svg");
+  --bg-logo-dark: url("../images/logo-dark-mode.svg");
+  --bg-curvy-light: url("../images/bg-curvy-light-mode.svg");
+  --bg-curvy-dark: url("../images/bg-curvy-dark-mode.svg");
+}
+
+@variant dark (&:is(.dark *));
+
+.ficon:hover {
+  /* Add filter to make the color of svg, which imported by img tag, looks like cyan-300 and add some transform effects */
+  filter: brightness(1.5) sepia(1) hue-rotate(160deg) saturate(4);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
