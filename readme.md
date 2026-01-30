@@ -1,6 +1,8 @@
 # Fylo Website
 
-A responsive landing page for a cloud storage service with dark/light mode toggle.
+A responsive landing page with dark/light mode toggle.
+
+🔗 **Live Demo:** [https://fylo-website-project.vercel.app/](https://fylo-website-project.vercel.app/)
 
 ## Preview
 
